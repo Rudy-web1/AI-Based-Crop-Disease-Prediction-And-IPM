@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Prediction History</title>
+<link rel="stylesheet" href="./style.css">
+<script src="js/app.js"></script>
+</head>
+
+<body onload="loadHistory()">
+
+<nav class="navbar">
+
+<div class="logo">AgriAI</div>
+
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./detect.html">Detect</a></li>
+<li><a href="./history.html">History</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Prediction History</h1>
+<p>Previous disease detections performed by the system</p>
+
+</div>
+
+</section>
+
+
+<section class="page-section">
+
+<div class="glass-card">
+
+<h2>Past Diagnoses</h2>
+
+<table>
+
+<tr>
+<th>Disease</th>
+<th>Confidence</th>
+<th>Date</th>
+</tr>
+
+<tbody id="historyTable"></tbody>
+
+</table>
+
+</div>
+
+</section>
+
+</body>
+</html>

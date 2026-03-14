@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Disease Detection</title>
+
+<link rel="stylesheet" href="./style.css">
+
+<script src="js/app.js"></script>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">AgriAI</div>
+
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./detect.html">Detect</a></li>
+<li><a href="./history.html">History</a></li>
+</ul>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Plant Disease Detection</h1>
+
+<p>
+Upload a tomato leaf image and let AI analyze plant health
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- DETECTION PANEL -->
+
+<section class="detect-container">
+
+<div class="detect-card">
+
+<h2>Upload Leaf Image</h2>
+
+
+<label class="file-upload">
+
+<input type="file" id="imageUpload">
+
+<span>Select Leaf Image</span>
+
+</label>
+
+
+<br>
+
+
+<button class="action-btn" onclick="previewImage()">
+
+Preview Image
+
+</button>
+
+
+<img id="preview" class="preview">
+
+
+<br>
+
+
+<button class="action-btn detect-btn" onclick="predictDisease()">
+
+Run AI Detection
+
+</button>
+
+</div>
+
+</section>
+
+
+</body>
+</html>
